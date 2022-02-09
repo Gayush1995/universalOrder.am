@@ -29,18 +29,18 @@ public class UniversalOrderHomePageConstats {
     public static final String PIZZA_OVENS_XPATH="//a[@href='/Shop/Index#1445']";//Печи Для Пиццы
     public static final String OVENS_XPATH="//a[@href='/Shop/Index#1446']";//Шкафы Пекарские и Жарочные
     public static final String PROOFING_CABINETS_AND_CHAMBERS_XPATH="//a[@href='/Shop/Index#1447']";//Расстоечные Шкафы и Камеры
-		//KETTLES_AND_COUNTERTOP_FRYERS_XPATH="//a[@href='/Shop/Index#1448']"//Кипятильники и Настольные Фритюрницы
-		//MINI_DISTRIBUTION_LINE_XPATH="//a[@href='/Shop/Index#1449']"//Мини-Линия Раздачи
-		//DISTRIBUTION_OF_LINE"ASTA"_XPATH="//a[@href='/Shop/Index#1450']"//Линия Раздачи "Аста"
-		//DISTRIBUTION_OF_LINE"PATSHA"_XPATH="//a[@href='/Shop/Index#1451']"//Линия Раздачи "Патша"
-		//DISTRIBUTION_OF_LINE"PREMER"_XPATH="//a[@href='/Shop/Index#1452']"//Линия Раздачи "Премьер"
-		//SELF_SERVICE_LINE_XPATH="//a[@href='/Shop/Index#1453']"//Линия Самообслуживания Передвижная
-		//BARS_XPATH="//a[@href='/Shop/Index#1454']"//Салат-Бары
-		//REFRIGERATED_TABLES_XPATH="//a[@href='/Shop/Index#1455']"Охлаждаемые Столы
-		//DESKTOP_SHOWCASE_XPATH="//a[@href='/Shop/Index#1456']"//Настольные Витрины
-		//NEUTRAL_EQUIPMENT_XPATH="//a[@href='/Shop/Index#1457']"//Нейтральное Оборудование
-		//ACCESSORIES_XPATH="//a[@href='/Shop/Index#1458']"//Аксессуары
-		//SPECIAL_EQUIPMENT="//a[@href='/Shop/Index#1459']"//Специальное Оборудование
+    public static final String KETTLES_AND_COUNTERTOP_FRYERS_XPATH="//a[@href='/Shop/Index#1448']";//Кипятильники и Настольные Фритюрницы
+    public static final String MINI_DISTRIBUTION_LINE_XPATH="//a[@href='/Shop/Index#1449']";//Мини-Линия Раздачи
+    public static final String DISTRIBUTION_OF_LINE_ASTA_XPATH="//a[@href='/Shop/Index#1450']";//Линия Раздачи "Аста"
+    public static final String DISTRIBUTION_OF_LINE_PATSHA__XPATH="//a[@href='/Shop/Index#1451']";//Линия Раздачи "Патша"
+    public static final String DISTRIBUTION_OF_LINE_PREMER_XPATH="//a[@href='/Shop/Index#1452']";//Линия Раздачи "Премьер"
+    public static final String SELF_SERVICE_LINE_XPATH="//a[@href='/Shop/Index#1453']";//Линия Самообслуживания Передвижная
+    public static final String BARS_XPATH="//a[@href='/Shop/Index#1454']";//Салат-Бары
+    public static final String REFRIGERATED_TABLES_XPATH="//a[@href='/Shop/Index#1455']";//Охлаждаемые Столы
+    public static final String DESKTOP_SHOWCASE_XPATH="//a[@href='/Shop/Index#1456']";//Настольные Витрины
+    public static final String NEUTRAL_EQUIPMENT_XPATH="//a[@href='/Shop/Index#1457']";//Нейтральное Оборудование
+    public static final String ACCESSORIES_XPATH="//a[@href='/Shop/Index#1458']";//Аксессуары
+    public static final String SPECIAL_EQUIPMENT="//a[@href='/Shop/Index#1459']";//Специальное Оборудование
 	
 	
 	
@@ -64,4 +64,8 @@ public class UniversalOrderHomePageConstats {
    //Footer Part Links Xpaths
     public static final String EMAIL_INPUT_FIELD_XPATH="//div[@class='send-message pencil_edit']//input[@type='text']";
     public static final String SEND_BUTTON_XPATH="//button[text()='Ուղարկել']";
+    public static final String PHONE_NUMBER_XPATH="//a[@href='tel:+37494493089']";
+    public static final String ADDRESS_XPATH="//p[text()='Նալբանդյան 50, տարածք 176']";
+    public static final String EMAIL_ADDRESS_XPATH="//div[@class='icon']//span[@class='fa fa-envelope']";
+    public static final String FIND_US_ON_GOOGLEMAP_XPATH="//a[@href='https://goo.gl/maps/8arEpbCLqLyKDbWk8']";
 }

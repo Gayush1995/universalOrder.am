@@ -8,23 +8,34 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.web365.universalorder.am.page.home.UniversalOrderHomePage;
-
+import com.web365.universalorder.am.page.productList.UniversalorderBarsProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalorderDesktopShowcaseProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalorderNeutralEquipmentProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalorderRefrigeratedTablesProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalorderSpecialEquipmentProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderBoilersPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderCanopyProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderContactProcessingApparatusProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderConvectionOvensPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderDishwashersProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalOrderDistributionOfLineASTAProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalOrderDistributionOfLinePATSHAProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalOrderDistributionOfLinePREMERProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderElectromechanicalProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderElectronicStovesProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderGasEquipmentProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderInductionCookersProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalOrderKettlesAndCountertopFryersProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalOrderMiniDistributionLineProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderOvensProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderParakombiOvensPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderPizzaOvensProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderProofingCabinetsAndChambersProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderRefrigeratedCabinetsProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderRotaryOvensProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalOrderSelfServiceLineProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderShockFreezingGeneratorsProductsPage;
+import com.web365.universalorder.am.page.productList.UniversalorderAccessoriesProductsPage;
 
 import universalOrder.base.UniversalOrderBaseTest;
 
@@ -254,5 +265,160 @@ public void proofingCabinetsAndChambersProductsLink() throws InterruptedExceptio
 //2.Click on Расстоечные Шкафы и Камеры Link
   proofingCabinetsAndChambersProductsLink = home.goToProofingCabinetsAndChambersProductsList();
  home = home.logoClick();
+}
+@Test
+public void universalOrderKettlesAndCountertopFryersProductsTest() throws InterruptedException { //Кипятильники и Настольные Фритюрницы
+//1.UniversalOrder.am is open
+	UniversalOrderKettlesAndCountertopFryersProductsPage universalOrderKettlesAndCountertopFryersProduct = new UniversalOrderKettlesAndCountertopFryersProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Кипятильники и Настольные Фритюрницы Link
+  universalOrderKettlesAndCountertopFryersProduct=home.goToKettlesAndCountertopFryersProductsList();
+ @SuppressWarnings("deprecation")
+ 	WebDriverWait w = new WebDriverWait(driver,3);
+ //presenceOfElementLocated condition
+ w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1448/546.jpg']")));
+   Assert.assertTrue(universalOrderKettlesAndCountertopFryersProduct.kettlesAndCountertopPageVerify.isDisplayed());
+  home = home.logoClick();
+}
+@Test
+public void universalOrderMiniDistributionLineProductsTest() throws InterruptedException { //Мини-Линия Раздачи
+//1.UniversalOrder.am is open
+	UniversalOrderMiniDistributionLineProductsPage universalOrderMiniDistributionLineProduct = new UniversalOrderMiniDistributionLineProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Мини-Линия Раздачи Link
+  universalOrderMiniDistributionLineProduct=home.goToMiniDistributionLineProductList();
+ home = home.logoClick();
+}
+@Test
+public void universalOrderDistributionOfLineASTAPProductsTest() throws InterruptedException { //Линия Раздачи "Аста"
+//1.UniversalOrder.am is open
+	UniversalOrderDistributionOfLineASTAProductsPage distributionOfLineASTAPProducts = new UniversalOrderDistributionOfLineASTAProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Линия Раздачи "Аста" Link
+  distributionOfLineASTAPProducts=home.goTodistributionOfLineASTAPProductList();
+  @SuppressWarnings("deprecation")
+	WebDriverWait w = new WebDriverWait(driver,3);
+//presenceOfElementLocated condition
+w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1450/549.jpg']")));
+ Assert.assertTrue(distributionOfLineASTAPProducts.distributionOfLinePageVerify.isDisplayed());
+home = home.logoClick();
+}
+@Test
+public void universalOrderDistributionOfLinePATSHAProductsTest() throws InterruptedException { //Линия Раздачи "Патша"
+//1.UniversalOrder.am is open
+	UniversalOrderDistributionOfLinePATSHAProductsPage distributionOfLinePATSHAProducts = new UniversalOrderDistributionOfLinePATSHAProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Линия Раздачи "Патша" Link
+  distributionOfLinePATSHAProducts=home.goTodistributionOfLinePATSHAProductList();
+  @SuppressWarnings("deprecation")
+	WebDriverWait w = new WebDriverWait(driver,3);
+//presenceOfElementLocated condition
+w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1451/566.jpg']")));
+ Assert.assertTrue(distributionOfLinePATSHAProducts.distributionOfLinePATSHAPageVerify.isDisplayed());
+home = home.logoClick();
+}
+@Test
+public void universalOrderDistributionOfLinePREMERProductsTest() throws InterruptedException { //Линия Раздачи "Премьер"
+//1.UniversalOrder.am is open
+	UniversalOrderDistributionOfLinePREMERProductsPage distributionOfLinePREMERProducts = new UniversalOrderDistributionOfLinePREMERProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Линия Раздачи "Премьер" Link
+  distributionOfLinePREMERProducts=home.goTodistributionOfLinePREMERProductList();
+  @SuppressWarnings("deprecation")
+	WebDriverWait w = new WebDriverWait(driver,3);
+//presenceOfElementLocated condition
+w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1452/575.jpg']")));
+ Assert.assertTrue(distributionOfLinePREMERProducts.distributionOfLinePREMERPageVerify.isDisplayed());
+home = home.logoClick();
+}
+@Test
+public void universalOrderSelfServiceLineProductsTest() throws InterruptedException { //Линия Самообслуживания Передвижная
+//1.UniversalOrder.am is open
+	UniversalOrderSelfServiceLineProductsPage selfServiceLineProducts = new UniversalOrderSelfServiceLineProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Линия Самообслуживания Передвижная Link
+  selfServiceLineProducts=home.goToSelfServiceLineProductList();
+  home = home.logoClick();
+}
+@Test
+public void barsProductsTest() throws InterruptedException { //Салат-Бары
+//1.UniversalOrder.am is open
+	UniversalorderBarsProductsPage barsProducts = new UniversalorderBarsProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Салат-Бары Link
+  barsProducts=home.goToBarsProductList();
+  home = home.logoClick();
+}
+@Test
+public void refrigeratedTablesProductTest() throws InterruptedException { //Охлаждаемые Столы
+//1.UniversalOrder.am is open
+	UniversalorderRefrigeratedTablesProductsPage refrigeratedTablesProducts = new UniversalorderRefrigeratedTablesProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Охлаждаемые Столы Link
+  refrigeratedTablesProducts=home.goToRefrigeratedTablesProductList();
+  home = home.logoClick();
+}
+@Test
+public void desktopShowcaseProductTest() throws InterruptedException { //Настольные Витрины
+//1.UniversalOrder.am is open
+	UniversalorderDesktopShowcaseProductsPage desktopShowcaseProducts = new UniversalorderDesktopShowcaseProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Настольные Витрины Link
+  desktopShowcaseProducts=home.goToDesktopShowcaseProductList();
+  home = home.logoClick();
+}
+@Test
+public void neutralEquipmentProductTest() throws InterruptedException { //Нейтральное Оборудование
+//1.UniversalOrder.am is open
+	UniversalorderNeutralEquipmentProductsPage neutralEquipmentProducts = new UniversalorderNeutralEquipmentProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Нейтральное Оборудование Link
+  neutralEquipmentProducts=home.goToNeutralEquipmentProductList();
+  @SuppressWarnings("deprecation")
+	WebDriverWait w = new WebDriverWait(driver,3);
+//presenceOfElementLocated condition
+w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1457/588.jpg']")));
+Assert.assertTrue(neutralEquipmentProducts.neutralEquipmentPageVerify.isDisplayed());
+home = home.logoClick();
+}
+@Test
+public void accessoriesProductTest() throws InterruptedException { //Аксессуары
+//1.UniversalOrder.am is open
+	UniversalorderAccessoriesProductsPage accessoriesProducts = new UniversalorderAccessoriesProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Аксессуары Link
+  accessoriesProducts=home.goToAccessoriesProductList();
+  @SuppressWarnings("deprecation")
+	WebDriverWait w = new WebDriverWait(driver,3);
+//presenceOfElementLocated condition
+w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1458/591.jpg']")));
+Assert.assertTrue(accessoriesProducts.accessoriespageverifyxpath.isDisplayed());
+home = home.logoClick();
+ }
+@Test
+public void specialEquipmentProductTest() throws InterruptedException {//Специальное Оборудование
+	UniversalorderSpecialEquipmentProductsPage specialEquipmentProducts = new UniversalorderSpecialEquipmentProductsPage(driver);
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+  Thread.sleep(2000);
+//2.Click on Специальное Оборудование Link
+  specialEquipmentProducts=home.goToSpecialEquipmentProductList();
+  @SuppressWarnings("deprecation")
+	WebDriverWait w = new WebDriverWait(driver,3);
+//presenceOfElementLocated condition
+w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/cats/1459/599.jpg']")));
+Assert.assertTrue(specialEquipmentProducts.specialEquipmentpageverifyxpath.isDisplayed());
+home = home.logoClick();
+
 }
 }
