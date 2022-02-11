@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import com.web365.universalorder.am.page.base.UniversalOrderBasePage;
 import com.web365.universalorder.am.page.footerPartLinks.GoogleMapPage;
 import com.web365.universalorder.am.page.footerPartLinks.UniversalOrderSendingEmailPage;
+import com.web365.universalorder.am.page.headerPartLinks.UniversalOrderHomeProductionPage;
+import com.web365.universalorder.am.page.headerPartLinks.UniversalOrderShopCartPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderAboutUsPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderContactsPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderPartnersPage;
@@ -69,6 +71,19 @@ public class UniversalOrderHomePage extends UniversalOrderBasePage {
 	
 	@FindBy(xpath=CONTACTS_XPATH)
 	public WebElement contactslink;
+	
+	
+	@FindBy(xpath=SEARCH_INPUT_FIELD_XPATH)
+   	public WebElement searchInputField;
+
+	@FindBy(xpath=SEARCH_BUTTON)
+   	public WebElement searchButton;
+	
+	@FindBy(xpath=OUR_PRODUCTS)
+   	public WebElement ourPoductLink;
+	
+	
+	
 	
 	@FindBy(xpath=PARACOMBI_OVENS_XPATH)
 	public WebElement paracombiProductLink;
@@ -181,7 +196,8 @@ public class UniversalOrderHomePage extends UniversalOrderBasePage {
     @FindBy(xpath=FIND_US_ON_GOOGLEMAP_XPATH)
    	public WebElement findUsOnGoogleMap;
     
-    
+    @FindBy(xpath=WORKING_TIME)
+   	public WebElement workingTime;
     
     
     
@@ -317,16 +333,10 @@ public UniversalorderSpecialEquipmentProductsPage goToSpecialEquipmentProductLis
 	specialEquipmentProductLink.click();
 	return new UniversalorderSpecialEquipmentProductsPage(this.driver);
 }
-
-
-
-
-
-
-
-
-
-
+public UniversalOrderShopCartPage goToShopCartPage () {
+	shopCart.click();
+	return new UniversalOrderShopCartPage(this.driver);
+}
 
 
 
@@ -349,4 +359,15 @@ public GoogleMapPage  goToGoogleMapPageClick  () {
 	return new GoogleMapPage(this.driver);
 }
 
+public void fillInSearch(String text) {
+	searchInputField.sendKeys(text);
+}
+public UniversalOrderHomePage searchClick() {
+	searchButton.click();
+	return new UniversalOrderHomePage(this.driver);
+}
+public UniversalOrderHomeProductionPage goToUniversalOrderHomeProductionPageClick  () {
+	ourPoductLink.click();
+	return new UniversalOrderHomeProductionPage(this.driver);
+}
 }

@@ -7,6 +7,15 @@ public class UniversalOrderHomePageConstats {
 	 public static final String SERVICES_XPATH="//a[@href='/Home/Services']";
     public static final String PARTNERS_XPATH="//a[@href='/Home/Partners']";
     public static final String CONTACTS_XPATH="//a[@href='#contact']";
+    
+    
+    
+    
+    
+       //Search input field
+    public static final String SEARCH_INPUT_FIELD_XPATH="//div[@class='search']//input[@type='text']";
+    public static final String SEARCH_BUTTON="//span[text()='Որոնել']";
+    public static final String OUR_PRODUCTS="//a[@href='/Home/Production']";
 	
 		
 		
@@ -68,4 +77,5 @@ public class UniversalOrderHomePageConstats {
     public static final String ADDRESS_XPATH="//p[text()='Նալբանդյան 50, տարածք 176']";
     public static final String EMAIL_ADDRESS_XPATH="//div[@class='icon']//span[@class='fa fa-envelope']";
     public static final String FIND_US_ON_GOOGLEMAP_XPATH="//a[@href='https://goo.gl/maps/8arEpbCLqLyKDbWk8']";
+    public static final String WORKING_TIME="//h5[text()='Աշխ․ Ժամեր']";
 }

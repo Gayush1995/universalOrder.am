@@ -61,5 +61,13 @@ public class FooterPartLinksTest  extends UniversalOrderBaseTest{
 	Assert.assertTrue(home.emailAddress.isDisplayed());
 	home = home.logoClick();
 	}
+	@Test
+	public void workingTimeTest() throws InterruptedException {
+		UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+	  Thread.sleep(2000);
 
+	Assert.assertTrue(home.workingTime.isDisplayed());
+	home = home.logoClick();
+	
+}
 }
