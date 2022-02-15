@@ -41,18 +41,17 @@ public class UniversalOrderMenuFromHomePageTest extends UniversalOrderBaseTest {
 	}
 	@Test
 	public void partnersLinkTest() throws InterruptedException {
-		UniversalOrderPartnersPage partners = new UniversalOrderPartnersPage(driver);
-		UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
-	  partners=home.goToPartners();
+		
+	UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+	UniversalOrderPartnersPage partners=home.goToPartners();
 	  Thread.sleep(2000);
 	  Assert.assertTrue(partners.partnersTitle.isDisplayed());
 	
 	}
 	@Test
 	public void contactsLinkTest() throws InterruptedException {
-		UniversalOrderContactsPage contacts = new UniversalOrderContactsPage(driver);
-		UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
-	  contacts=home.goToContacts();
+    UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+		UniversalOrderContactsPage contacts=home.goToContacts();
 	  Thread.sleep(2000);
 	  Assert.assertTrue(contacts.contactinfo.isDisplayed());
 	

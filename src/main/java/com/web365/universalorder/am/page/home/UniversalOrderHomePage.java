@@ -15,7 +15,18 @@ import com.web365.universalorder.am.page.menu.UniversalOrderAboutUsPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderContactsPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderPartnersPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderServicesPage;
-import com.web365.universalorder.am.page.ourPartners.UniversalOrderBeelinePartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderArturHotelPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderArzniAroxjaranPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderAshtarakiDzorRestaurantPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderBeelineAMPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderGrandCandyPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderGrandHoldingPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderHyattPlacePartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderIbisHotelPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderPizzaHutPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderTashirPizzaPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderUWCdilijanCollegePartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderVivaCellMTSPartnerPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderOvensProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderKettlesAndCountertopFryersProductsPage;
 import com.web365.universalorder.am.page.productList.UniversalOrderMiniDistributionLineProductsPage;
@@ -175,10 +186,58 @@ public class UniversalOrderHomePage extends UniversalOrderBasePage {
    
    
    
+   @FindBy(xpath=IBIS_HOTEL_XPATH)
+	public WebElement ibisHotelpartnerLink;
+   
+   @FindBy(xpath=ASHTARAKI_DZOR_RESTAURANT_XPATH)
+	public WebElement ashtarakiDzorRestaurantpartnerLink;
+   
+   @FindBy(xpath=VIVALDI_XPATH)
+	public WebElement vivaldipartnerLink;
+   
+   @FindBy(xpath=ARTURS_HOTEL_AM_XPATH)
+	public WebElement arturHotelpartnerLink;
+  
    @FindBy(xpath=BEELINE_AM_XPATH)
-	public WebElement beelinepartnerLink;
+	public WebElement beelineampartnerLink;
 
-    @FindBy(xpath=EMAIL_INPUT_FIELD_XPATH)
+   @FindBy(xpath=ARZNI_AROXJARAN)
+	public WebElement arzniAroxjaranpartnerLink;
+   
+   @FindBy(xpath=VIVA_CELL_MTS_XPATH)
+	public WebElement vivaCellMTSpartnerLink;
+
+   @FindBy(xpath=GRAND_HOLDING_XPATH)
+	public WebElement grandHoldingpartnerLink;
+
+   @FindBy(xpath=GRAND_CANDY_XPATH)
+  	public WebElement grandCandyPartnerLink;
+
+   @FindBy(xpath=TASHIR_PIZZA_XPATH)
+ 	public WebElement tashirPizzaPartnerLink;
+  
+   @FindBy(xpath=UWC_DILIJAN_COLLEGE_XPATH)
+	public WebElement uwcDilijanCollegePartnerLink;
+  
+   @FindBy(xpath=HYATT_PLACE_XPATH)
+	public WebElement hyattPlacePartnerLink;
+
+   @FindBy(xpath=PIZZA_HUT_XPATH)
+	public WebElement pizzaHutPartnerLink;
+   
+   
+  
+   
+   
+   
+   
+   
+   
+   
+   
+  
+   
+   @FindBy(xpath=EMAIL_INPUT_FIELD_XPATH)
    	public WebElement emailInputField;
    
     @FindBy(xpath=SEND_BUTTON_XPATH)
@@ -342,11 +401,73 @@ public UniversalOrderShopCartPage goToShopCartPage () {
 
 
 
-public UniversalOrderBeelinePartnerPage goToUniversalOrderBeelinePartnerPageClick  () {
-	beelinepartnerLink.click();
-	return new UniversalOrderBeelinePartnerPage(this.driver);
+public UniversalOrderIbisHotelPartnerPage goToUniversalOrderIbisHotelPartnerPageClick  () {
+	ibisHotelpartnerLink.click();
+	return new UniversalOrderIbisHotelPartnerPage(this.driver);
 }
-   public void fillInEmail(String email) {
+
+public UniversalOrderAshtarakiDzorRestaurantPage goToAshtarakiDzorRestaurantPartnersPageClick  () {
+	ashtarakiDzorRestaurantpartnerLink.click();
+	return new UniversalOrderAshtarakiDzorRestaurantPage(this.driver);
+}
+public UniversalOrderArturHotelPage goToArturHotelPageClick() {
+	arturHotelpartnerLink.click();
+	return new UniversalOrderArturHotelPage(this.driver);
+}
+
+public UniversalOrderBeelineAMPartnerPage goToUniversalOrderBeelineAMPartnerPageClick  () {
+	beelineampartnerLink.click();
+	return new UniversalOrderBeelineAMPartnerPage(this.driver);
+}
+public UniversalOrderArzniAroxjaranPartnerPage goToUniversalOrderArzniAroxjaranPartnerPageClick  () {
+	arzniAroxjaranpartnerLink.click();
+	return new UniversalOrderArzniAroxjaranPartnerPage(this.driver);
+}
+public UniversalOrderVivaCellMTSPartnerPage goToUniversalOrderVivaCellMTSPartnerPageClick  () {
+	vivaCellMTSpartnerLink.click();
+	return new UniversalOrderVivaCellMTSPartnerPage(this.driver);
+}
+public UniversalOrderGrandHoldingPartnerPage goToUniversalOrderGrandHoldingPartnerPageClick  () {
+	grandHoldingpartnerLink.click();
+	return new UniversalOrderGrandHoldingPartnerPage(this.driver);
+}
+public UniversalOrderGrandCandyPartnerPage goToUniversalOrderGrandCandyPartnerPageClick  () {
+	grandCandyPartnerLink.click();
+	return new UniversalOrderGrandCandyPartnerPage(this.driver);
+}
+public UniversalOrderTashirPizzaPartnerPage goToUniversalOrderTashirPizzaPartnerPageClick  () {
+	tashirPizzaPartnerLink.click();
+	return new UniversalOrderTashirPizzaPartnerPage(this.driver);
+}
+public UniversalOrderUWCdilijanCollegePartnerPage goToUniversalOrderUWCdilijanCollegePartnerPageClick  () {
+	uwcDilijanCollegePartnerLink.click();
+	return new UniversalOrderUWCdilijanCollegePartnerPage(this.driver);
+}
+public UniversalOrderHyattPlacePartnerPage goToUniversalOrderHyattPlacePartnerPageClick  () {
+	hyattPlacePartnerLink.click();
+	return new UniversalOrderHyattPlacePartnerPage(this.driver);
+}
+public UniversalOrderPizzaHutPartnerPage goToUniversalOrderPizzaHutPartnerPageClick  () {
+	pizzaHutPartnerLink.click();
+	return new UniversalOrderPizzaHutPartnerPage(this.driver);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public void fillInEmail(String email) {
 	   emailInputField.sendKeys(email);
    }
   
