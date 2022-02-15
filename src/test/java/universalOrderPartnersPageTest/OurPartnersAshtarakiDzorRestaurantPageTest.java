@@ -26,7 +26,7 @@ public class OurPartnersAshtarakiDzorRestaurantPageTest extends UniversalOrderBa
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/2.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='http://www.ashtarakidzor.am/']")));
    //3.Click on <Ashtaraki Dzor Restaurant> Link
 	   UniversalOrderAshtarakiDzorRestaurantPage ashtarakiDzorRestaurantPartnerLink=partners.goToAshtarakiDzorRestaurantPartnersPageClick();
  Thread.sleep(2000);

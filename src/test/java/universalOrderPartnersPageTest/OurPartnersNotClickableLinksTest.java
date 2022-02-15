@@ -118,7 +118,7 @@ public void hyattJermukpartnerLinkTest() throws InterruptedException {
    // presenceOfElementLocated condition
    
    w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/18.jpg']")));
-//3.Verify tha<HYATT JERMUK> partner picture is present
+//3.Verify that <HYATT JERMUK> partner picture is present
    Assert.assertTrue(driver.findElement(By.xpath("//img[@src='/img/partners/18.jpg']")).isDisplayed());
 }
 @Test
@@ -135,7 +135,7 @@ public void lorangeCafeteriapartnerLinkTest() throws InterruptedException {
    // presenceOfElementLocated condition
    
    w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/21.jpg']")));
-//3.Verify tha<LORANGE CAFETERIA> partner picture is present
+//3.Verify that <LORANGE CAFETERIA> partner picture is present
    Assert.assertTrue(driver.findElement(By.xpath("//img[@src='/img/partners/21.jpg']")).isDisplayed());
 }
 @Test
@@ -152,7 +152,7 @@ public void araratHallpartnerLinkTest() throws InterruptedException {
    // presenceOfElementLocated condition
    
    w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/22.jpg']")));
-//3.Verify tha<Ararat Hall> partner picture is present
+//3.Verify that <Ararat Hall> partner picture is present
    Assert.assertTrue(driver.findElement(By.xpath("//img[@src='/img/partners/22.jpg']")).isDisplayed());
 }
 @Test
@@ -169,8 +169,25 @@ public void brazilianPioneerpartnerLinkTest() throws InterruptedException {
    // presenceOfElementLocated condition
    
    w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/24.jpg']")));
-//3.Verify tha<Brazilian Pioneer Restaurant> partner picture is present
+//3.Verify that <Brazilian Pioneer Restaurant> partner picture is present
    Assert.assertTrue(driver.findElement(By.xpath("//img[@src='/img/partners/24.jpg']")).isDisplayed());
+}
+@Test
+public void radissonBlupartnerLinkTest() throws InterruptedException { 
+//1.UniversalOrder.am is open
+
+  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
+//2.Click <Our Partner> Link From menu list
+  UniversalOrderPartnersPage partners=home.goToPartners();
+ Thread.sleep(2000);
+
+  @SuppressWarnings("deprecation")
+ 	WebDriverWait w = new WebDriverWait(driver,3);
+   // presenceOfElementLocated condition
+   
+   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/27.jpg']")));
+//3.Verify that <Radisson Blu> partner picture is present
+   Assert.assertTrue(driver.findElement(By.xpath("//img[@src='/img/partners/27.jpg']")).isDisplayed());
 }
 
 }

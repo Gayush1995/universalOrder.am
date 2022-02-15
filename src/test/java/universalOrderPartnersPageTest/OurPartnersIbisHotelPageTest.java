@@ -28,7 +28,7 @@ public class OurPartnersIbisHotelPageTest extends UniversalOrderBaseTest {
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/1.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://ibis.accorhotels.com/geoloc/selectdisplayzone/index.gb.shtml']")));
    //3.Click on <Ibis Hotel> Link
 	   UniversalOrderIbisHotelPartnerPage ibisHotelPartnerLink=partners.goToUniversalOrderIbisHotelPartnerPageClick();
  Thread.sleep(2000);

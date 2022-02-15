@@ -25,7 +25,7 @@ public class OurPartnerVivaCellMTSPageTest extends  UniversalOrderBaseTest{
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/13.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://www.mts.am/en']")));
    //3.Click on <Viva Cell MTS> Link
 	   UniversalOrderVivaCellMTSPartnerPage vivaCellMTSPartnerLink=partners.goToUniversalOrderVivaCellMTSPartnerPageClick();
  Thread.sleep(2000);

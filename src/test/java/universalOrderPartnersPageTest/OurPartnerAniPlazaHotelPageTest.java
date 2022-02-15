@@ -4,15 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
 import com.web365.universalorder.am.page.home.UniversalOrderHomePage;
 import com.web365.universalorder.am.page.menu.UniversalOrderPartnersPage;
-import com.web365.universalorder.am.page.ourPartners.UniversalOrderUWCdilijanCollegePartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderAniPlazaHotelPartnerPage;
 
 import universalOrder.base.UniversalOrderBaseTest;
 
-public class OurPartnerUWCdilijanCollegePageTest extends UniversalOrderBaseTest {
+public class OurPartnerAniPlazaHotelPageTest extends UniversalOrderBaseTest{
 	@Test
-	public void uwcDilijanCollegePartnerPageTest() throws InterruptedException { 
+	public void araratResortPartnerPageTest() throws InterruptedException { 
 	//1.UniversalOrder.am is open
 	
 	  UniversalOrderHomePage home = new UniversalOrderHomePage(driver);
@@ -24,9 +25,9 @@ public class OurPartnerUWCdilijanCollegePageTest extends UniversalOrderBaseTest 
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://www.uwc.org/']")));
-   //3.Click on <UWC Dilijan College> Link
-	   UniversalOrderUWCdilijanCollegePartnerPage uwcDilijanCollegePartnerLink=partners.goToUniversalOrderUWCdilijanCollegePartnerPageClick();
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://anihotel.com/']")));
+   //3.Click on <Ani Plaza> Link
+	   UniversalOrderAniPlazaHotelPartnerPage aniPlazaPartnerLink=partners.goToUniversalOrderAniPlazaHotelPartnerPageClick();
  Thread.sleep(5000);
 	}
 }

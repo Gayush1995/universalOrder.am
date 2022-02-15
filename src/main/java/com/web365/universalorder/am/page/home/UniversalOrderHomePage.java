@@ -15,14 +15,18 @@ import com.web365.universalorder.am.page.menu.UniversalOrderAboutUsPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderContactsPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderPartnersPage;
 import com.web365.universalorder.am.page.menu.UniversalOrderServicesPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderAniPlazaHotelPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderAraratResortPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderArturHotelPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderArzniAroxjaranPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderAshtarakiDzorRestaurantPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderBeelineAMPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderDolmamaPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderGrandCandyPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderGrandHoldingPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderHyattPlacePartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderIbisHotelPartnerPage;
+import com.web365.universalorder.am.page.ourPartners.UniversalOrderKingGardenPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderPizzaHutPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderTashirPizzaPartnerPage;
 import com.web365.universalorder.am.page.ourPartners.UniversalOrderUWCdilijanCollegePartnerPage;
@@ -225,17 +229,23 @@ public class UniversalOrderHomePage extends UniversalOrderBasePage {
    @FindBy(xpath=PIZZA_HUT_XPATH)
 	public WebElement pizzaHutPartnerLink;
    
+   @FindBy(xpath=DOLMAMA_XPATH)
+	public WebElement dolmamaPartnerLink;
+   
+   @FindBy(xpath=ARARAT_RESORT_HOTEL_XPATH)
+  	public WebElement araratResortPartnerLink;
+
+   @FindBy(xpath=KING_GARDEN_XPATH)
+ 	public WebElement kingGardenPartnerLink;
+   
+   @FindBy(xpath=ANI_PLAZA_HOTEL_XPATH)
+	public WebElement aniPlazaHotelPartnerLink;
+   
+   
    
   
    
    
-   
-   
-   
-   
-   
-   
-  
    
    @FindBy(xpath=EMAIL_INPUT_FIELD_XPATH)
    	public WebElement emailInputField;
@@ -450,6 +460,22 @@ public UniversalOrderHyattPlacePartnerPage goToUniversalOrderHyattPlacePartnerPa
 public UniversalOrderPizzaHutPartnerPage goToUniversalOrderPizzaHutPartnerPageClick  () {
 	pizzaHutPartnerLink.click();
 	return new UniversalOrderPizzaHutPartnerPage(this.driver);
+}
+public UniversalOrderDolmamaPartnerPage goToUniversalOrderDolmamaPartnerPageClick  () {
+	dolmamaPartnerLink.click();
+	return new UniversalOrderDolmamaPartnerPage(this.driver);
+}
+public UniversalOrderAraratResortPartnerPage goToUniversalOrderAraratResortPartnerPageClick  () {
+	araratResortPartnerLink.click();
+	return new UniversalOrderAraratResortPartnerPage(this.driver);
+}
+public UniversalOrderKingGardenPartnerPage goToUniversalOrderKingGardenPartnerPageClick  () {
+	kingGardenPartnerLink.click();
+	return new UniversalOrderKingGardenPartnerPage(this.driver);
+}
+public UniversalOrderAniPlazaHotelPartnerPage goToUniversalOrderAniPlazaHotelPartnerPageClick  () {
+	aniPlazaHotelPartnerLink.click();
+	return new UniversalOrderAniPlazaHotelPartnerPage(this.driver);
 }
 
 

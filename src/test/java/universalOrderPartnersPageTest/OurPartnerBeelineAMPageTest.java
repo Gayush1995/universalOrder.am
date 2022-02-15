@@ -25,7 +25,7 @@ public class OurPartnerBeelineAMPageTest extends UniversalOrderBaseTest {
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/12.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://www.beeline.am/hy/']")));
    //3.Click on <Beeline.am> Link
 	   UniversalOrderBeelineAMPartnerPage beelineAmPartnerLink=partners.goToUniversalOrderBeelineAMPartnerPageClick();
  Thread.sleep(2000);

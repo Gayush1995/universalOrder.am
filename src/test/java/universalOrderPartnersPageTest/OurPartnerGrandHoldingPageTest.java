@@ -25,7 +25,7 @@ public class OurPartnerGrandHoldingPageTest extends UniversalOrderBaseTest {
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/15.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='http://www.grandholding.org/']")));
    //3.Click on <Grand Holding> Link
 	   UniversalOrderGrandHoldingPartnerPage grandHoldingPartnerLink=partners.goToUniversalOrderGrandHoldingPartnerPageClick();
  Thread.sleep(10000);

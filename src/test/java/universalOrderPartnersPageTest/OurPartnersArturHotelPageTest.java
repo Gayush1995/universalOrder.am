@@ -26,7 +26,7 @@ public class OurPartnersArturHotelPageTest extends UniversalOrderBaseTest {
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/4.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='http://arthurs-hotel.am/en']")));
    //3.Click on <Artur Hotel> Link
 	   UniversalOrderArturHotelPage arturHotelPartnerLink=partners.goToArturHotelPageClick();
  Thread.sleep(2000);

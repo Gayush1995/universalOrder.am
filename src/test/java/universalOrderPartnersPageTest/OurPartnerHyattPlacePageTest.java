@@ -25,7 +25,7 @@ public class OurPartnerHyattPlacePageTest extends UniversalOrderBaseTest{
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/23.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://www.hyatt.com/brands/hyatt-place']")));
    //3.Click on <Hyatt Place> Link
 	   UniversalOrderHyattPlacePartnerPage hyattPlacePartnerLink=partners.goToUniversalOrderHyattPlacePartnerPageClick();
  Thread.sleep(10000);

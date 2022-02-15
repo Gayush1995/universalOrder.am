@@ -24,7 +24,7 @@ public class OurPartnersArzniAroxjaranPageTest extends UniversalOrderBaseTest{
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/13.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://www.arzniresort.am/']")));
    //3.Click on <Arzni Aroxjaran> Link
 	   UniversalOrderArzniAroxjaranPartnerPage arzniAroxjaranPartnerLink=partners.goToUniversalOrderArzniAroxjaranPartnerPageClick();
  Thread.sleep(2000);

@@ -25,7 +25,7 @@ public class OurPartnerTashirPizzaPageTest extends  UniversalOrderBaseTest{
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/19.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='http://www.tashirpizza.am/']")));
    //3.Click on <Tashir Pizza> Link
 	   UniversalOrderTashirPizzaPartnerPage tashirPizzaPartnerLink=partners.goToUniversalOrderTashirPizzaPartnerPageClick();
  Thread.sleep(10000);

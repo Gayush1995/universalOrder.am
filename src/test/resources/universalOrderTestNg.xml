@@ -4,7 +4,7 @@
     <test thread-count="1" verbose="2" name="Default test">
          <classes>
                
-  <class name="universalOrder.UniversalOrderMenuFromHomePageTest"/> 
+         <class name="universalOrder.UniversalOrderMenuFromHomePageTest"/> 
                 <class name="universalOrder.FooterPartLinksTest"/> 
                <class name="universalOrder.SearchinputFieldTests"/>
                <class name="universalOrder.HeaderPartLinksTest"/>
@@ -23,6 +23,10 @@
                       <class name="universalOrderPartnersPageTest.OurPartnerUWCdilijanCollegePageTest"/>
                          <class name="universalOrderPartnersPageTest.OurPartnerHyattPlacePageTest"/>
                           <class name="universalOrderPartnersPageTest.OurPartnerPizzaHutPageTest"/>
+                          <class name="universalOrderPartnersPageTest.OurPartnerDolmamaPageTest"/>
+                            <class name="universalOrderPartnersPageTest.OurPartnerAraratResortPageTest"/>
+                            <class name="universalOrderPartnersPageTest.OurPartnerKingGardenPageTest"/>
+                            <class name="universalOrderPartnersPageTest.OurPartnerAniPlazaHotelPageTest"/>
           </classes>
          
      </test> <!-- Default test -->

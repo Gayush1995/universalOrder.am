@@ -26,9 +26,9 @@ public class OurPartnerGrandCandyPageTest extends UniversalOrderBaseTest{
 	 	WebDriverWait w = new WebDriverWait(driver,3);
 	   // presenceOfElementLocated condition
 	   
-	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//img[@src='/img/partners/16.jpg']")));
+	   w.until(ExpectedConditions.presenceOfElementLocated (By.xpath("//a[@href='https://www.grandcandy.am/en/home.html']")));
    //3.Click on <Grand Candy> Link
 	   UniversalOrderGrandCandyPartnerPage grandCandyPartnerLink=partners.goToUniversalOrderGrandCandyPartnerPageClick();
- Thread.sleep(10000);
+ Thread.sleep(5000);
 	}
 }

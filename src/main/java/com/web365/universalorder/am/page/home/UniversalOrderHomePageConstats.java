@@ -54,24 +54,26 @@ public class UniversalOrderHomePageConstats {
 	
 	
 	//OUR PARTNERS XPATHS
-    public static final String IBIS_HOTEL_XPATH="//img[@src='/img/partners/1.jpg']";
-    public static final String ASHTARAKI_DZOR_RESTAURANT_XPATH="//img[@src='/img/partners/2.jpg']";
+    public static final String IBIS_HOTEL_XPATH="//a[@href='https://ibis.accorhotels.com/geoloc/selectdisplayzone/index.gb.shtml']";
+    public static final String ASHTARAKI_DZOR_RESTAURANT_XPATH="//a[@href='http://www.ashtarakidzor.am/']";
     public static final String VIVALDI_XPATH="//img[@src='/img/partners/3.jpg']";
-    public static final String ARTURS_HOTEL_AM_XPATH="//img[@src='/img/partners/4.jpg']";
-    public static final String BEELINE_AM_XPATH="//img[@src='/img/partners/12.jpg']";
-    public static final String ARZNI_AROXJARAN="//img[@src='/img/partners/13.jpg']";
-    public static final String VIVA_CELL_MTS_XPATH="//img[@src='/img/partners/14.jpg']";
+    public static final String ARTURS_HOTEL_AM_XPATH="//a[@href='http://arthurs-hotel.am/en']";
+    public static final String BEELINE_AM_XPATH="//a[@href='https://www.beeline.am/hy/']";
+    public static final String ARZNI_AROXJARAN="//a[@href='https://www.arzniresort.am/']";
+    public static final String VIVA_CELL_MTS_XPATH="//a[@href='https://www.mts.am/en']";
     public static final String PIZZA_HUT_XPATH="//a[@href='http://www.pizza-hut.am/#/']";
-	//DALMA_XPATH="//a[@href='http://www.dolmama.am/']"
-	//ARARAT_ORT_HOTEL_XPATH="//a[@href='https://araratresort.am/en']"
+    public static final String DOLMAMA_XPATH="//a[@href='http://www.dolmama.am/']";
+    public static final String ARARAT_RESORT_HOTEL_XPATH="//a[@href='https://araratresort.am/en']";
+    public static final String KING_GARDEN_XPATH="//a[@href='http://kinggarden.am/']";
+    public static final String ANI_PLAZA_HOTEL_XPATH="//a[@href='https://anihotel.com/']";
 	//ARZNI_RESORT_XPATH="//a[@href='https://www.arzniresort.am/']"
 	//VIVA_CELL_MTS_XPATH="//a[@href='https://www.mts.am/en']"
-    public static final String GRAND_HOLDING_XPATH="//img[@src='/img/partners/15.jpg']";
-    public static final String GRAND_CANDY_XPATH="//img[@src='/img/partners/16.jpg']";
-    public static final String TASHIR_PIZZA_XPATH="//img[@src='/img/partners/19.jpg']";
-    public static final String UWC_DILIJAN_COLLEGE_XPATH="//img[@src='/img/partners/20.jpg']";
+    public static final String GRAND_HOLDING_XPATH="//a[@href='http://www.grandholding.org/']";
+    public static final String GRAND_CANDY_XPATH="//a[@href='https://www.grandcandy.am/en/home.html']";
+    public static final String TASHIR_PIZZA_XPATH="//a[@href='http://www.tashirpizza.am/']";
+    public static final String UWC_DILIJAN_COLLEGE_XPATH="//a[@href='https://www.uwc.org/']";
 	//UWC.ORG_XPATH="//a[@href='https://www.uwc.org/']"
-    public static final String HYATT_PLACE_XPATH="//img[@src='/img/partners/23.jpg']";
+    public static final String HYATT_PLACE_XPATH="//a[@href='https://www.hyatt.com/brands/hyatt-place']";
 
 
 
